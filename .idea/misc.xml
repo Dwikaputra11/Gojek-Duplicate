@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/dev/AndroidStudioProjects/Binar Academy/Dengan Git Config/Gojek-Duplicate/GojekDuplicate/app/src/main/res/layout/activity_main.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/ic_group_36722.xml" value="0.167" />
+        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/ic_home.xml" value="0.134" />
+        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/layout/fragment_chat.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/menu/menu_navigation.xml" value="0.253125" />
       </map>
     </option>
   </component>
