@@ -7,6 +7,136 @@
     android:layout_height="match_parent"
     tools:context=".ChatFragment">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
 
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/headerTittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragmentContainerChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarChat"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/textQuickAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quick actions"
+            android:textColor="@color/black"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/btnContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textQuickAction"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/btnInbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/ic_button_inbox" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnInbox"
+                android:layout_marginStart="43dp"
+                android:text="Inbox"
+                android:textColor="@color/black"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btnHelpTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/ic_button_help_ticket" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnHelpTicket"
+                android:layout_marginStart="153dp"
+                android:text="Help tickets"
+                android:textColor="@color/black" />
+
+
+            <ImageButton
+                android:id="@+id/btnPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#FFFFFFFF"
+                android:src="@drawable/ic_button_pay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnPay"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="51dp"
+                android:text="Pay"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/messageContainer"
+            android:layout_below="@id/btnContainer"
+            android:layout_width="match_parent"
+            android:layout_marginTop="26dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your chats"
+                android:textColor="@color/black"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
 
 </RelativeLayout>
