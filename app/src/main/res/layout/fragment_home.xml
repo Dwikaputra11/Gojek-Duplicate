@@ -9,20 +9,20 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar"
+        layout="@layout/toolbar_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         />
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:menu="@menu/menu_navigation"
-        android:layout_alignParentBottom="true"
-        />
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottom_nav"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:menu="@menu/menu_navigation" />-->
 
     <RelativeLayout
         android:id="@+id/rl_jumbotron"
@@ -35,6 +35,7 @@
         android:backgroundTint="#2671B3">
 
         <LinearLayout
+
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="20dp"
