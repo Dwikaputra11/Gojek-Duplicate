@@ -3,22 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable-v24/ic_floating_chat.xml" value="0.1535" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/button_round.xml" value="0.134" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/ic_button_help_ticket.xml" value="0.1765" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/ic_button_inbox.xml" value="0.134" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/ic_button_pay.xml" value="0.1765" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/ic_button_round.xml" value="0.1515" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/ic_chat.xml" value="0.1535" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/ic_exp_treasure.xml" value="0.1535" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/ic_floating_chat.xml" value="0.1515" />
         <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/ic_group_36722.xml" value="0.167" />
         <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/drawable/ic_home.xml" value="0.134" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/layout/fragment_chat.xml" value="0.264" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/layout/fragment_orders.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/layout/fragment_promos.xml" value="0.264" />
+        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/layout/fragment_chat.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/killo/AndroidStudioProjects/Gojek-Duplicate/app/src/main/res/menu/menu_navigation.xml" value="0.253125" />
         <entry key="..\:/dev/AndroidStudioProjects/Binar Academy/Dengan Git Config/Gojek-Duplicate/GojekDuplicate/app/src/main/res/drawable/bottom_nav_state.xml" value="0.1" />
         <entry key="..\:/dev/AndroidStudioProjects/Binar Academy/Dengan Git Config/Gojek-Duplicate/GojekDuplicate/app/src/main/res/drawable/circular_radius.xml" value="0.1" />
@@ -30,6 +18,7 @@
         <entry key="..\:/dev/AndroidStudioProjects/Binar Academy/Dengan Git Config/Gojek-Duplicate/GojekDuplicate/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
         <entry key="..\:/dev/AndroidStudioProjects/Binar Academy/Dengan Git Config/Gojek-Duplicate/GojekDuplicate/app/src/main/res/layout/fragment_history.xml" value="0.2490566037735849" />
         <entry key="..\:/dev/AndroidStudioProjects/Binar Academy/Dengan Git Config/Gojek-Duplicate/GojekDuplicate/app/src/main/res/layout/fragment_home.xml" value="0.23157894736842105" />
+        <entry key="..\:/dev/AndroidStudioProjects/Binar Academy/Dengan Git Config/Gojek-Duplicate/GojekDuplicate/app/src/main/res/layout/fragment_ongoing.xml" value="0.10833333333333334" />
         <entry key="..\:/dev/AndroidStudioProjects/Binar Academy/Dengan Git Config/Gojek-Duplicate/GojekDuplicate/app/src/main/res/layout/fragment_orders.xml" value="0.13360507246376813" />
         <entry key="..\:/dev/AndroidStudioProjects/Binar Academy/Dengan Git Config/Gojek-Duplicate/GojekDuplicate/app/src/main/res/layout/fragment_promos.xml" value="0.13360507246376813" />
         <entry key="..\:/dev/AndroidStudioProjects/Binar Academy/Dengan Git Config/Gojek-Duplicate/GojekDuplicate/app/src/main/res/layout/toolbar.xml" value="0.1" />
