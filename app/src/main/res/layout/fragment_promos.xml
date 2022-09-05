@@ -1,10 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PromosFragment">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
 
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/headerTittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Promos"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragmentContainerPromos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarChat"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_exp_treasure"
+
+            />
+        <ImageView
+            android:id="@+id/voucher"
+            android:layout_below="@id/exp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/voucher_image"
+
+            />
+        <ImageView
+            android:id="@+id/enterVoucher"
+            android:layout_below="@id/voucher"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/enter_voucher_image"
+            />
+        <TextView
+            android:id="@+id/txtPromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promo menarik buat kamu"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/enterVoucher"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="24dp"
+
+            />
+        <ImageView
+            android:id="@+id/promotionSelect"
+            android:layout_below="@id/txtPromo"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:paddingStart="-10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/promotion_select_image"
+
+            />
+        <TextView
+            android:id="@+id/discountHead"
+            android:layout_below="@id/promotionSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Promo untuk anda"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="24dp"
+
+            />
+        <TextView
+            android:id="@+id/subHead"
+            android:layout_below="@id/discountHead"
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order dengan potongan harga"
+
+            />
+        <ImageView
+            android:id="@+id/products"
+            android:layout_below="@id/subHead"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/discount_products_image"
+
+            />
+
+        <TextView
+            android:id="@+id/discountHeadOngkir"
+            android:layout_below="@id/products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Diskon ongkir 8 ribu"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="24dp"
+
+            />
+
+        <Button
+            android:id="@+id/buttonLihatSemua"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="630dp"
+            android:layout_toRightOf="@id/discountHeadOngkir"
+            android:backgroundTint="#E4FFE0"
+            android:layout_marginLeft="20dp"
+            android:text="Lihat Semua"
+            android:textColor="#3AA930"
+            android:textAllCaps="false" />
+        <TextView
+            android:id="@+id/subHeadOngkir"
+            android:layout_below="@id/discountHeadOngkir"
+            android:layout_marginLeft="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan yang nikmat dengan potongan biaya antar"
+
+            />
+        <ImageView
+            android:layout_below="@id/subHeadOngkir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ongkir_discount_image"
+            />
+
+
+
+
+    </RelativeLayout>
 
 </RelativeLayout>

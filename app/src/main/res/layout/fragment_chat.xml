@@ -7,6 +7,694 @@
     android:layout_height="match_parent"
     tools:context=".ChatFragment">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/headerTittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragmentContainerChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarChat"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/textQuickAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quick actions"
+            android:textColor="@color/black"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/btnContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textQuickAction"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/btnInbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/ic_button_inbox" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnInbox"
+                android:layout_marginStart="43dp"
+                android:text="Inbox"
+                android:textColor="@color/black"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btnHelpTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#FFFFFF"
+                android:src="@drawable/ic_button_help_ticket" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnHelpTicket"
+                android:layout_marginStart="153dp"
+                android:text="Help tickets"
+                android:textColor="@color/black" />
+
+
+            <ImageButton
+                android:id="@+id/btnPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#FFFFFFFF"
+                android:src="@drawable/ic_button_pay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnPay"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="51dp"
+                android:text="Pay"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/messageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btnContainer"
+            android:layout_marginTop="26dp">
+
+            <TextView
+                android:id="@+id/textQuickChats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your chats"
+                android:textColor="@color/black"
+
+                />
+
+            <RelativeLayout
+                android:id="@+id/chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textQuickChats"
+                android:layout_marginTop="16dp">
+
+                <ImageButton
+                    android:id="@+id/imgBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/ic_button_round" />
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgBtn"
+                    android:paddingTop="6dp"
+                    android:text="+62815123123"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/number"
+                    android:layout_toRightOf="@id/imgBtn"
+                    android:paddingTop="5dp"
+                    android:text="You have a message"
+
+                    />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="6dp"
+                    android:text="26/12/21"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat"
+                android:layout_marginTop="16dp">
+
+                <ImageButton
+                    android:id="@+id/imgBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/ic_button_round" />
+
+                <TextView
+                    android:id="@+id/number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgBtn2"
+                    android:paddingTop="6dp"
+                    android:text="+62815123123"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/message2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/number2"
+                    android:layout_toRightOf="@id/imgBtn2"
+                    android:paddingTop="5dp"
+                    android:text="You have a message"
+
+                    />
+
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="6dp"
+                    android:text="26/12/21"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat2"
+                android:layout_marginTop="16dp">
+
+                <ImageButton
+                    android:id="@+id/imgBtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/ic_button_round" />
+
+                <TextView
+                    android:id="@+id/number3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgBtn3"
+                    android:paddingTop="6dp"
+                    android:text="+62815123123"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/message3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/number3"
+                    android:layout_toRightOf="@id/imgBtn3"
+                    android:paddingTop="5dp"
+                    android:text="You have a message"
+
+                    />
+
+                <TextView
+                    android:id="@+id/date3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="6dp"
+                    android:text="26/12/21"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat3"
+                android:layout_marginTop="16dp">
+
+                <ImageButton
+                    android:id="@+id/imgBtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/ic_button_round" />
+
+                <TextView
+                    android:id="@+id/number4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgBtn4"
+                    android:paddingTop="6dp"
+                    android:text="+62815123123"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/message4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/number4"
+                    android:layout_toRightOf="@id/imgBtn4"
+                    android:paddingTop="5dp"
+                    android:text="You have a message"
+
+                    />
+
+                <TextView
+                    android:id="@+id/date4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="6dp"
+                    android:text="26/12/21"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat4"
+                android:layout_marginTop="16dp">
+
+                <ImageButton
+                    android:id="@+id/imgBtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/ic_button_round" />
+
+                <TextView
+                    android:id="@+id/number5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgBtn5"
+                    android:paddingTop="6dp"
+                    android:text="+62815123123"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/message5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/number5"
+                    android:layout_toRightOf="@id/imgBtn5"
+                    android:paddingTop="5dp"
+                    android:text="You have a message"
+
+                    />
+
+                <TextView
+                    android:id="@+id/date5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="6dp"
+                    android:text="26/12/21"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat5"
+                android:layout_marginTop="16dp">
+
+                <ImageButton
+                    android:id="@+id/imgBtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/ic_button_round" />
+
+                <TextView
+                    android:id="@+id/number6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgBtn6"
+                    android:paddingTop="6dp"
+                    android:text="+62815123123"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/message6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/number6"
+                    android:layout_toRightOf="@id/imgBtn6"
+                    android:paddingTop="5dp"
+                    android:text="You have a message"
+
+                    />
+
+                <TextView
+                    android:id="@+id/date6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="6dp"
+                    android:text="26/12/21"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat6"
+                android:layout_marginTop="16dp">
+
+                <ImageButton
+                    android:id="@+id/imgBtn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/ic_button_round" />
+
+                <TextView
+                    android:id="@+id/number7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgBtn7"
+                    android:paddingTop="6dp"
+                    android:text="+62815123123"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/message7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/number7"
+                    android:layout_toRightOf="@id/imgBtn7"
+                    android:paddingTop="5dp"
+                    android:text="You have a message"
+
+                    />
+
+                <TextView
+                    android:id="@+id/date7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="6dp"
+                    android:text="26/12/21"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chat8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat7"
+                android:layout_marginTop="16dp">
+
+                <ImageButton
+                    android:id="@+id/imgBtn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/ic_button_round" />
+
+                <TextView
+                    android:id="@+id/number8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgBtn8"
+                    android:paddingTop="6dp"
+                    android:text="+62815123123"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/message8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/number8"
+                    android:layout_toRightOf="@id/imgBtn8"
+                    android:paddingTop="5dp"
+                    android:text="You have a message"
+
+                    />
+
+                <TextView
+                    android:id="@+id/date8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="6dp"
+                    android:text="26/12/21"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginTop="310dp"
+        android:id="@+id/underLine1"
+        android:layout_width="345dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="1dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginTop="75dp"
+        android:id="@+id/underLine2"
+        android:layout_width="345dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/underLine1"
+        android:layout_height="1dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginTop="75dp"
+        android:id="@+id/underLine3"
+        android:layout_width="345dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/underLine2"
+        android:layout_height="1dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginTop="75dp"
+        android:layout_below="@id/underLine3"
+        android:id="@+id/underLine4"
+        android:layout_width="345dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="1dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginTop="75dp"
+        android:layout_below="@id/underLine4"
+        android:id="@+id/underLine5"
+        android:layout_width="345dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="1dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginTop="75dp"
+        android:layout_below="@id/underLine5"
+        android:id="@+id/underLine6"
+        android:layout_width="345dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="1dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginTop="75dp"
+        android:layout_below="@id/underLine6"
+        android:id="@+id/underLine7"
+        android:layout_width="345dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="1dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_marginTop="75dp"
+        android:layout_below="@id/underLine7"
+        android:id="@+id/underLine8"
+        android:layout_width="345dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="1dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:src="@drawable/ic_chat"
+        app:backgroundTint="#00880A" />
 
 
 </RelativeLayout>
