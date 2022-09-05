@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/main_color"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <EditText
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/twenty_dp_radius"
+            android:layout_toStartOf="@id/iv_profile"
+            android:layout_marginEnd="40dp"
+            android:hint="Find services, foods, or places"
+            android:textSize="14sp"
+            android:paddingHorizontal="10dp"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            />
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/twenty_dp_radius"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
