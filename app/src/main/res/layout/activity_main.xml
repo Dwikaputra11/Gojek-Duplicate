@@ -7,21 +7,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerGojek"
-        android:layout_above="@id/bottomNav"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNav">
+
+    </androidx.fragment.app.FragmentContainerView>
 
 
-    </RelativeLayout>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/menu_navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/bottom_nav_state"
+        app:itemTextColor="@drawable/bottom_nav_state"
+        app:menu="@menu/menu_navigation"/>
 
 </RelativeLayout>
